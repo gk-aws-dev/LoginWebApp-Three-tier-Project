@@ -1,0 +1,8 @@
+version: '3'
+services:
+  tomcat-img:
+    image: 'tomcat:9'
+    ports:
+    - "8080:8080"
+    volumes:
+    - "/opt/docker:/usr/local/tomcat/webapps"
